@@ -113,6 +113,7 @@ float tienHat(int gioVao, int gioRa) {
     int flag = 1;
     float tienThanhToan;
     soGio = gioRa - gioVao;
+    int tienHat = 150000;
     if (soGio <= 3) {
         if (gioVao >= 14 && gioVao <= 17) {
             return tienThanhToan =  soGio * 150000 * 0.9;
@@ -221,7 +222,7 @@ void tinhTienDien(){
                 tienDien = 50 * 1678 + 50 * 1734 + 100 * 2014 + 100 * 2536 + (kWh - 300) * 2834;
             }
             else {
-                tienDien = 50 * 1678 + 50 * 1734 + 100 * 2014 + 100 * 2536 + 100 * 2834 + (kWh - 400) * 2927;l
+                tienDien = 50 * 1678 + 50 * 1734 + 100 * 2014 + 100 * 2536 + 100 * 2834 + (kWh - 400) * 2927;
             }
             printf("Gia dien cua 50 so dau:     1678 VND\n");
             printf("Gia dien tu so 51 den 100:  1734 VND\n");
@@ -471,7 +472,7 @@ void sapXepThongTinSV(){
         for (int i = 0; i < n; i++) {
             printf("Ho ten: %-20s | Diem: %.2f | Hoc luc: %-12s\n", sv[i].hoTen, sv[i].diem, sv[i].hocLuc);
         }
-        /*int choice;
+        int choice;
         while (1) {
             printf("Ban co muon nhap them sinh vien khong? [1: Co, 0: Khong]: ");
             scanf("%d", &choice);
@@ -485,9 +486,9 @@ void sapXepThongTinSV(){
             else {
                 printf("Lua chon khong hop le. Vui long chon 1 hoac 0!\n");
             }
-        }*/
-        menuPhu(8);
-        flag = 0;
+        }
+        /*menuPhu(8);
+        flag = 0;*/
     }
 }
 void gameFPOLYLOTT() {
